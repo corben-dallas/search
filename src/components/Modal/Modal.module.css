@@ -1,0 +1,159 @@
+.modalWrapper{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: #969696d6;
+}
+.modalContent{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #ffffff;
+    width: 50%;
+    border-radius: 5px;
+    padding: 5px 30px;
+    box-sizing: border-box;
+    box-shadow: 0px 2px 1px -1px rgba(0,0,0,0.2), 0px 1px 1px 0px rgba(0,0,0,0.14), 0px 1px 3px 0px rgba(0,0,0,0.12);
+}
+.modalBackBtnWrapper{
+    display: flex;
+    margin: 16px 0;
+}
+.modalBackBtn{
+    display: flex;
+    padding: 3px 6px;
+    background-color: #878787;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color .3s ease;
+
+}
+.modalBackBtn:hover{
+    background-color: #757575;
+}
+.modalBackBtn p{
+    margin: 0;
+    color: #e0e0e0
+}
+.modalBackBtn svg {
+    fill:#e0e0e0;
+    width: .8rem;
+} 
+
+.modalFilmImgBtn{
+    display: flex;
+}
+.modalFilmImg{
+    width: 40%;
+    display: flex;
+}
+.modalFilmImg p{
+    background-color: #696969;
+    margin: 0;
+    width: 150px;
+    height: 180px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: .8;
+}
+.modalFilmImg p span{
+    color: #f1f1f1;
+    text-align: center;
+}
+.modalFilmBtn{
+    width: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.modalFilmBtnDisable{
+    width: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.modalFilmBtn p{
+    color: inherit;
+    border: 1px solid rgba(0, 0, 0, 0.08);
+    padding: 6px 16px;
+    font-size: 0.8rem;
+    min-width: 64px;
+    box-sizing: border-box;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,border 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+    font-weight: 500;
+    border-radius: 4px;
+    text-transform: uppercase;
+    text-decoration: none;
+    width: 80%;
+    text-align: center;
+    cursor: pointer;
+}
+.modalFilmBtnDisable p{
+    color: inherit;
+    border: 1px solid rgba(220, 0, 78, 0.5);;
+    padding: 6px 16px;
+    font-size: 0.8rem;
+    min-width: 64px;
+    box-sizing: border-box;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,border 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+    font-weight: 500;
+    border-radius: 4px;
+    text-transform: uppercase;
+    text-decoration: none;
+    width: 80%;
+    text-align: center;
+    cursor: pointer;
+}
+.modalFilmBtn p:hover {
+    background-color: #e0e0e0;
+}
+.modalFilmBtnDisable p:hover {
+    background-color: rgba(220, 0, 78, 0.08);
+}
+.modalFilmName{
+    margin-bottom: 16px;
+}
+.modalFilmName span{
+    font-weight: 100;
+    font-size: .9rem;
+    
+}
+
+@media screen and (max-width: 540px){
+    .modalContent{
+        width: 100%;
+        height: 100%;
+    }
+}
+@media  (orientation: landscape ) and (max-width: 768px){
+    .modalWrapper{
+        width: 100%;
+        height: 100%;
+    }
+    .modalContent{
+        width: 100%;
+        height: 100%;
+    }
+    .modalFilmImgBtn{
+        flex-direction: column;
+    }
+    .modalContent>div:last-child{
+        display: flex;
+    }
+    .modalFilmImg{
+        width: 100%;
+    }
+    .modalFilmBtnDisable{
+        width: 100%;
+    }
+    .modalFilmBtn{
+        width: 100%;
+    }
+    .modalFilmName{
+        margin-left: 15px;
+    }
+}

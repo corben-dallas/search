@@ -1,0 +1,145 @@
+
+.searchFealdWrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+}
+.searchFeald{
+    width: 70%;
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 4px;
+    box-shadow: 0px 2px 1px -1px rgba(0,0,0,0.2), 0px 1px 1px 0px rgba(0,0,0,0.14), 0px 1px 3px 0px rgba(0,0,0,0.12);
+}
+.searchFealdInput{
+    width: 100%;
+    border: none;
+    margin: 0;
+    display: block;
+    outline: none;
+    font-size: 1rem;
+    padding: 0 5px;
+    color: #757575;
+}
+.searchFealdIcon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+}
+.searchFealdIcon:first-child{
+    background-color: #e0e0e0;
+    border-radius: 4px 0 0 4px;
+}
+.searchFealdIcon svg{
+    width: 1rem;
+    fill: #757575;
+}
+.serchFealdTagsWrapper{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #e0e0e0;
+}
+.serchFealdTags{
+    margin: 3px;
+    border: none;
+    display: inline-flex;
+    outline: 0;
+    padding: 0;
+    font-size: .9rem;
+    box-sizing: border-box;
+    transition: background-color 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+    align-items: center;
+    white-space: nowrap;
+    border-radius: 16px;
+    vertical-align: middle;
+    justify-content: center;
+    text-decoration: none;
+    background-color: #f1f1f1;
+    cursor: pointer;
+}
+.serchFealdTags:hover{
+    background-color: #e0e0e0;
+}
+.serchFealdTagsActive{
+    background-color: #e0e0e0;
+    
+}
+.serchFealdTagsActiveSvg svg{
+    fill: #757575!important
+}
+.serchFealdTagsContent{
+    cursor: inherit;
+    display: flex;
+    align-items: center;
+    user-select: none;
+    white-space: nowrap;
+    padding-left: 12px;
+    padding-right: 12px;
+    font-weight: 100;
+}
+.serchFealdTags svg{
+    width: 0.9rem;
+}
+.serchFealdTagsIcon{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 1rem;
+    cursor: pointer;
+    margin: 0 5px 0 -6px;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.serchFealdTagsIcon svg{
+    fill: #e0e0e0;
+    transition: all .3s ease;
+}
+.serchFealdTagsIcon svg:hover{
+    fill: #757575
+}
+.navBtn{
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+}
+.navBtn a{
+    color: inherit;
+    border: 1px solid rgba(0, 0, 0, 0.08);
+    padding: 6px 16px;
+    font-size: 0.875rem;
+    min-width: 64px;
+    box-sizing: border-box;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,border 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+    font-weight: 500;
+    border-radius: 4px;
+    text-transform: uppercase;
+    text-decoration: none;
+    width: 15%;
+    text-align: center;
+    cursor: pointer;
+    margin: 0 15px;
+}
+.navBtn a:hover{
+    background-color: rgba(0, 0, 0, 0.08);
+}
+.activeBtn{
+    background-color: rgba(0, 0, 0, 0.08);
+}
+.navBtn a:active{
+    color: inherit;
+}
+
+@media screen and (max-width: 540px){
+    .searchFeald{
+        width: 100%;
+    }
+    .navBtn a{
+        width: 100%;
+    }
+}
