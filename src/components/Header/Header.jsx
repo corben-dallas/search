@@ -24,7 +24,7 @@ const Header = ({films, tags}) => {
     
     const handleInputFocus = () => {
         setInputValue({...inputValue, value: ''});
-        history.push('/films');
+        history.push('/movies');
     }
     return (
         <React.Fragment>
@@ -63,12 +63,12 @@ const Header = ({films, tags}) => {
                     }
                 </div>
                 <div className={styles.navBtn}>
-                    <NavLink to='/films' activeClassName={styles.activeBtn}>Фильмы</NavLink>
+                    <NavLink to='/movies' activeClassName={styles.activeBtn}>Фильмы</NavLink>
                     <NavLink to='/marks' activeClassName={styles.activeBtn}>Закладки</NavLink> 
                 </div>
             </div>
             <Switch>
-                <Route path='/films'> 
+                <Route path='/movies'> 
                     <List inputValue={inputValue} films={films} showTenItems={showTenItems} setShowTenItems={setShowTenItems} choosenTag={choosenTag}/> 
                 </Route>
                 <Route path='/marks'>

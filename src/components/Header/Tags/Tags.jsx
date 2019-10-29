@@ -14,10 +14,9 @@ const Tags = ( {o, inputValue, setInputValue, setShowTenItems, choosenTag, setCh
         setShowTenItems(10);
         setIsActiveBar(true);
         setChoosenTag({...choosenTag, choosen: tag});
-        history.push('/films');
+        history.push('/movies');
     };
-    const handleCancelClick = (evt) => {
-        console.log(evt.currentTarget)
+    const handleCancelClick = () => {
         if( inputValue !== ''){
             setIsActiveBar(false);
             setInputValue({...inputValue, value: ''});

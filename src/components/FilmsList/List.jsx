@@ -1,5 +1,5 @@
 import React, {useState, useEffect} from 'react'
-import {Link, useRouteMatch, Route, Switch } from 'react-router-dom';
+import {Link, Route, Switch } from 'react-router-dom';
 import Modal from '../Modal/Modal.jsx';
 import styles from './List.module.css';
 import BookmarkSvg from './BookmarkSvg.jsx';
@@ -47,7 +47,7 @@ const List = (props) => {
         <div className={styles.listWrapper}>
             {
                 films.filter(compare(inputValue.value)).slice(0, showTenItems).map( o => 
-                    <Link key={films.indexOf(o)} to={`films/${films.indexOf(o) + 1}`} className={styles.fimlWrapper} onClick={handleShowModal}>
+                    <Link key={films.indexOf(o)} to={`movies/${films.indexOf(o) + 1}`} className={styles.fimlWrapper} onClick={handleShowModal}>
                         <p className={styles.filmName}>{o.title}</p>
                         <div className={styles.filmTagsWrapper}>
                             {
@@ -66,7 +66,7 @@ const List = (props) => {
                 </p>
             </div>
             <Switch>
-                <Route path='/films/:id' render={ ({match}) => <Modal match={match}  setShowMaodal={setShowMaodal} films={films}/> } />
+                <Route path='/movies/:id' render={ ({match}) => <Modal match={match}  setShowMaodal={setShowMaodal} films={films}/> } />
             </Switch>
         </div>
     )

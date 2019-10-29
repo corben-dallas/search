@@ -54,7 +54,7 @@ const Modal = ({match, setShowMaodal, films}) => {
     let history = useHistory();
     const handleBackClick = () => {
         setShowMaodal(false);
-        history.push("/films");
+        history.push("/movies");
     }
 
     return (ReactDOM.createPortal(
