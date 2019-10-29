@@ -9,7 +9,7 @@
     "react-router-dom": "^5.1.2",
     "react-scripts": "3.2.0"
   },
-  "homepage": "https://corben-dallas.github.io/films",
+  "homepage": "https://corben-dallas.github.io/search",
   "scripts": {
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
